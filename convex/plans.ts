@@ -20,6 +20,7 @@ export const createPlan = mutation({
         })
       ),
     }),
+    
     dietPlan: v.object({
       dailyCalories: v.number(),
       meals: v.array(

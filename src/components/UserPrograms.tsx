@@ -79,7 +79,7 @@ const UserPrograms = () => {
           {USER_PROGRAMS.map((program) => (
             <Card
               key={program.id}
-              className="bg-card/90 backdrop-blur-sm border border-border hover:border-primary/50 transition-colors overflow-hidden"
+              className="flex flex-col h-fullbg-card/90 backdrop-blur-sm border border-border hover:border-primary/50 transition-colors overflow-hidden"
             >
               {/* Card header with user info */}
               <div className="flex items-center justify-between px-4 py-2 border-b border-border bg-background/70">
@@ -129,7 +129,7 @@ const UserPrograms = () => {
                 </div>
               </CardHeader>
 
-              <CardContent className="px-5">
+              <CardContent className="flex-1 px-5">
                 {/* Program details */}
                 <div className="space-y-5 pt-2">
                   <div className="flex items-start gap-3">
@@ -182,7 +182,7 @@ const UserPrograms = () => {
                 </div>
 
                 {/* Program description */}
-                <div className="mt-5 pt-4 border-t border-border">
+                <div className="mt-5 pt-5 border-t border-border">
                   <div className="text-sm text-muted-foreground">
                     <span className="text-primary">&gt; </span>
                     {program.workout_plan.description.substring(0, 120)}...
